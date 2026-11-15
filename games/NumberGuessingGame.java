@@ -26,6 +26,7 @@ public class NumberGuessingGame {
                 
                 System.out.println("Congratulations! You guessed the correct number: " + randomNumber);
                 System.out.println("It took you " + attempts + " attempts.");
+                scanner.close(); // Close the scanner to prevent resource leaks
                 break; // Exit the loop once the correct guess is found.
 
             } else if (userGuess > randomNumber) {
